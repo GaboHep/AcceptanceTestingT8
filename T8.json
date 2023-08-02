@@ -1,0 +1,424 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/everything.feature:3",
+      "name": "Adding a task",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/everything.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:6"
+          },
+          "name": "the To-Do list is empty",
+          "result": {
+            "duration": 0.00010514259338378906,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/everything.feature:5",
+          "match": {
+            "arguments": [
+              {
+                "name": "task_name",
+                "value": "Buy groceries"
+              }
+            ],
+            "location": "features/steps/steps.py:14"
+          },
+          "name": "the user adds a task \"Buy groceries\"",
+          "result": {
+            "duration": 0.00010824203491210938,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/everything.feature:6",
+          "match": {
+            "arguments": [
+              {
+                "name": "task_name",
+                "value": "Buy groceries"
+              }
+            ],
+            "location": "features/steps/steps.py:22"
+          },
+          "name": "the to-do list should contain \"Buy groceries\"",
+          "result": {
+            "duration": 0.000110626220703125,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/everything.feature:8",
+      "name": "List all tasks in the to-do list",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/everything.feature:9",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:35"
+          },
+          "name": "the to-do list contains tasks",
+          "result": {
+            "duration": 0.00013446807861328125,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "Task"
+            ],
+            "rows": [
+              [
+                "Buy groceries"
+              ],
+              [
+                "Pay bills"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "When",
+          "location": "features/everything.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:49"
+          },
+          "name": "the user lists all tasks",
+          "result": {
+            "duration": 8.630752563476562e-05,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/everything.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:57"
+          },
+          "name": "the output should contain",
+          "result": {
+            "duration": 9.059906005859375e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/everything.feature:16",
+      "name": "Mark a task as completed",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/everything.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:35"
+          },
+          "name": "the to-do list contains tasks",
+          "result": {
+            "duration": 0.0001575946807861328,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "Task",
+              "Status"
+            ],
+            "rows": [
+              [
+                "Buy groceries",
+                "Pending"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "When",
+          "location": "features/everything.feature:20",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:66"
+          },
+          "name": "the user marks task \"Buy groceries\" as completed",
+          "result": {
+            "duration": 0.00014138221740722656,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/everything.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:74"
+          },
+          "name": "the to-do list should show task \"Buy groceries\" as completed",
+          "result": {
+            "duration": 8.797645568847656e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/everything.feature:23",
+      "name": "Clear the entire to-do list",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/everything.feature:24",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:35"
+          },
+          "name": "the to-do list contains tasks",
+          "result": {
+            "duration": 0.0001342296600341797,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "Task"
+            ],
+            "rows": [
+              [
+                "Buy groceries"
+              ],
+              [
+                "Pay bills"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "When",
+          "location": "features/everything.feature:28",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:81"
+          },
+          "name": "the user clears the to-do list",
+          "result": {
+            "duration": 0.00014138221740722656,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/everything.feature:29",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:87"
+          },
+          "name": "the to-do list should be empty",
+          "result": {
+            "duration": 0.0001380443572998047,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/everything.feature:31",
+      "name": "Show most time consuming task",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/everything.feature:32",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:35"
+          },
+          "name": "the to-do list contains tasks",
+          "result": {
+            "duration": 0.0001380443572998047,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "Task",
+              "Time"
+            ],
+            "rows": [
+              [
+                "Buy groceries",
+                "30"
+              ],
+              [
+                "Pay bills",
+                "40"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "When",
+          "location": "features/everything.feature:36",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:92"
+          },
+          "name": "the user wants to see wich of the tasks has most time consuming",
+          "result": {
+            "duration": 9.202957153320312e-05,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/everything.feature:37",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:100"
+          },
+          "name": "1 of the tasks is selected",
+          "result": {
+            "duration": 8.0108642578125e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/everything.feature:38",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:105"
+          },
+          "name": "the name of this task is: Pay bills",
+          "result": {
+            "duration": 7.987022399902344e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/everything.feature:41",
+      "name": "Removing a task",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/everything.feature:42",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:35"
+          },
+          "name": "the to-do list contains tasks",
+          "result": {
+            "duration": 0.000118255615234375,
+            "status": "passed"
+          },
+          "step_type": "given",
+          "table": {
+            "headings": [
+              "Task"
+            ],
+            "rows": [
+              [
+                "Buy groceries"
+              ],
+              [
+                "Pay bills"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "When",
+          "location": "features/everything.feature:46",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:111"
+          },
+          "name": "the user removes the task \"Pay bills\"",
+          "result": {
+            "duration": 0.0002570152282714844,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/everything.feature:47",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/steps.py:117"
+          },
+          "name": "the to-do list should contain",
+          "result": {
+            "duration": 0.00013208389282226562,
+            "status": "passed"
+          },
+          "step_type": "then",
+          "table": {
+            "headings": [
+              "Task"
+            ],
+            "rows": [
+              [
+                "Buy groceries"
+              ]
+            ]
+          }
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/everything.feature:1",
+  "name": "Add todo item",
+  "status": "passed",
+  "tags": []
+}
+]
